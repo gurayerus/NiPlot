@@ -1,6 +1,5 @@
 # [NiPlot] Neuro-imaging data plotting
 
-|-----------------------------------------|
 
 **[NiPlot]** is a toolbox for plotting imaging and non-imaging data.
 
