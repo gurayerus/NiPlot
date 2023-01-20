@@ -2,16 +2,16 @@
 """
 contact: software@cbica.upenn.edu
 Copyright (c) 2018 University of Pennsylvania. All rights reserved.
-Use of this source code is governed by license located in license file: https://github.com/CBICA/NiChart/blob/main/LICENSE
+Use of this source code is governed by license located in license file: https://github.com/gurayerus/NiPlot/blob/main/LICENSE
 """
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os
 import pandas as pd
-from NiChart.core.dataio import DataIO
-from NiChart.core.model.datamodel import DataModel
+from NiPlot.core.dataio import DataIO
+from NiPlot.core.model.datamodel import DataModel
 
-class NiChartCmdApp:
+class NiPlotCmdApp:
     def __init__(self):
         pass
 

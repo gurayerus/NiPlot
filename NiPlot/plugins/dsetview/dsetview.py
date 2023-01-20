@@ -4,13 +4,13 @@ import numpy as np
 from PyQt5.QtGui import *
 from PyQt5 import QtGui, QtCore, QtWidgets, uic
 from PyQt5.QtWidgets import QMdiArea, QMdiSubWindow, QTextEdit, QComboBox, QLayout
-from NiChart.core.dataio import DataIO
-from NiChart.core.baseplugin import BasePlugin
-from NiChart.core import iStagingLogger
-from NiChart.core.gui.SearchableQComboBox import SearchableQComboBox
-from NiChart.core.gui.CheckableQComboBox import CheckableQComboBox
-from NiChart.core.plotcanvas import PlotCanvas
-from NiChart.core.model.datamodel import PandasModel
+from NiPlot.core.dataio import DataIO
+from NiPlot.core.baseplugin import BasePlugin
+from NiPlot.core import iStagingLogger
+from NiPlot.core.gui.SearchableQComboBox import SearchableQComboBox
+from NiPlot.core.gui.CheckableQComboBox import CheckableQComboBox
+from NiPlot.core.plotcanvas import PlotCanvas
+from NiPlot.core.model.datamodel import PandasModel
 
 import inspect
 

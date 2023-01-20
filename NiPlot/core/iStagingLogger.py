@@ -3,7 +3,7 @@
 contact: software@cbica.upenn.edu
 Author: Ashish Singh
 Copyright (c) 2018 University of Pennsylvania. All rights reserved.
-Use of this source code is governed by license located in license file: https://github.com/CBICA/NiChart/blob/main/LICENSE
+Use of this source code is governed by license located in license file: https://github.com/gurayerus/NiPlot/blob/main/LICENSE
 """
 
 import logging
@@ -11,7 +11,7 @@ import sys, os
 from logging.handlers import TimedRotatingFileHandler
 #FORMATTER = logging.Formatter("%(asctime)s — %(name)s — %(levelname)s — %(message)s")
 FORMATTER = logging.Formatter("[%(asctime)s — %(name)s — %(filename)s: Line:%(lineno)s — %(funcName)20s() ] — %(levelname)s — %(message)s")
-LOG_FILE = os.path.expanduser(os.path.join('~', '.NiChart','NiChart.log'))
+LOG_FILE = os.path.expanduser(os.path.join('~', '.NiPlot','NiPlot.log'))
 
 def get_console_handler():
     console_handler = logging.StreamHandler(sys.stdout)

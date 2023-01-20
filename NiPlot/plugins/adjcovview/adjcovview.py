@@ -3,13 +3,13 @@ from PyQt5 import QtGui, QtCore, QtWidgets, uic
 from PyQt5.QtWidgets import QMdiArea, QMdiSubWindow, QTextEdit, QComboBox
 import sys, os
 import pandas as pd
-from NiChart.core.dataio import DataIO
+from NiPlot.core.dataio import DataIO
 # import dtale
-from NiChart.core.baseplugin import BasePlugin
-from NiChart.core import iStagingLogger
-from NiChart.core.gui.SearchableQComboBox import SearchableQComboBox
-from NiChart.core.gui.CheckableQComboBox import CheckableQComboBox
-from NiChart.core.plotcanvas import PlotCanvas
+from NiPlot.core.baseplugin import BasePlugin
+from NiPlot.core import iStagingLogger
+from NiPlot.core.gui.SearchableQComboBox import SearchableQComboBox
+from NiPlot.core.gui.CheckableQComboBox import CheckableQComboBox
+from NiPlot.core.plotcanvas import PlotCanvas
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,7 +17,7 @@ import pandas as pd
 from matplotlib.cm import get_cmap
 from matplotlib.lines import Line2D
 import statsmodels.formula.api as sm
-from NiChart.core.model.datamodel import PandasModel
+from NiPlot.core.model.datamodel import PandasModel
 
 import inspect
 
@@ -237,8 +237,8 @@ class AdjCovView(QtWidgets.QWidget,BasePlugin):
         self.data_model_arr.datasets[self.active_index].data = dfCorr
 
         ## Create dict with info about new columns
-        outDesc = 'Created by NiChart AdjCovView Plugin'
-        outSource = 'NiChart AdjCovView Plugin'
+        outDesc = 'Created by NiPlot AdjCovView Plugin'
+        outSource = 'NiPlot AdjCovView Plugin'
         self.data_model_arr.AddNewVarsToDict(outVarNames, outCat, outDesc, outSource)
         
         ## Call signal for change in data

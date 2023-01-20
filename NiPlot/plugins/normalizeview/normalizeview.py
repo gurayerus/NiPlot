@@ -3,14 +3,14 @@ from PyQt5 import QtGui, QtCore, QtWidgets, uic
 from PyQt5.QtWidgets import QMdiArea, QMdiSubWindow, QLineEdit, QComboBox, QMenu, QAction, QWidgetAction
 import sys, os
 import pandas as pd
-from NiChart.core.dataio import DataIO
+from NiPlot.core.dataio import DataIO
 # import dtale
-from NiChart.core.baseplugin import BasePlugin
-from NiChart.core import iStagingLogger
-from NiChart.core.gui.SearchableQComboBox import SearchableQComboBox
-from NiChart.core.gui.CheckableQComboBox import CheckableQComboBox
-from NiChart.core.gui.NestedQMenu import NestedQMenu
-from NiChart.core.model.datamodel import PandasModel
+from NiPlot.core.baseplugin import BasePlugin
+from NiPlot.core import iStagingLogger
+from NiPlot.core.gui.SearchableQComboBox import SearchableQComboBox
+from NiPlot.core.gui.CheckableQComboBox import CheckableQComboBox
+from NiPlot.core.gui.NestedQMenu import NestedQMenu
+from NiPlot.core.model.datamodel import PandasModel
 
 import inspect
 
@@ -195,8 +195,8 @@ class NormalizeView(QtWidgets.QWidget,BasePlugin):
         self.data_model_arr.datasets[self.active_index].data = dfNorm
         
         ## Create dict with info about new columns
-        outDesc = 'Created by NiChart NormalizeView Plugin'
-        outSource = 'NiChart NormalizeView Plugin'
+        outDesc = 'Created by NiPlot NormalizeView Plugin'
+        outSource = 'NiPlot NormalizeView Plugin'
         self.data_model_arr.AddNewVarsToDict(outVarNames, outCat, outDesc, outSource)
             
         ## Call signal for change in data

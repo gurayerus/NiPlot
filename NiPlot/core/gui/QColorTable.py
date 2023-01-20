@@ -3,12 +3,12 @@
 Author: Guray Erus
 contact: software@cbica.upenn.edu
 Copyright (c) 2018 University of Pennsylvania. All rights reserved.
-Use of this source code is governed by license located in license file: https://github.com/CBICA/NiChart/blob/main/LICENSE
+Use of this source code is governed by license located in license file: https://github.com/gurayerus/NiPlot/blob/main/LICENSE
 """
 
 from PyQt5 import QtCore, QtWidgets, QtGui
-from NiChart.core.gui.CheckableQComboBox import CheckableQComboBox
-from NiChart.core import iStagingLogger
+from NiPlot.core.gui.CheckableQComboBox import CheckableQComboBox
+from NiPlot.core import iStagingLogger
 import numpy as np
 
 logger = iStagingLogger.get_logger(__name__)
