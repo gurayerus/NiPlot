@@ -25,26 +25,6 @@ conda activate NiPlot
 python -m pip install --upgrade pip
 ```
 
-### Prepare environment in Linux (CUBIC)
-Assuming current working directory is `NiPlot` and containing the source code
-cloned from https://github.com/gurayerus/NiPlot.git.
-
-```shell
-python -m venv .env
-.env/bin/activate
-python -m pip install --upgrade pip
-```
-
-### Prepare environment for PowerShell (Windows 10 or 11)
-Assuming current working directory is `NiChart` and containing the source code
-cloned from https://github.com/gurayerus/NiChart.git.
-
-```shell
-python -m venv .env
-& .env/Scripts/Activate.ps1
-python -m pip install --upgrade pip
-```
-
 ### Install the [NiPlot] software
 To install the [NiPlot], install it in a virtual or conda environment.
 Depending on the desired version, use one of the following
