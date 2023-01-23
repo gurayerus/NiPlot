@@ -8,16 +8,13 @@ name = "NiPlot"
 version = "0.1"
 description = "NeuroImaging Data Plotting Tool"
 authors = [
-    "Ahmed Abdulkadir <Ahmed.Abdulkadir@pennmedicine.upenn.edu>",
-    "Ashish Singh <Ashish.Singh@pennmedicine.upenn.edu>",
-    "Randa Melhem <Randa.Melhem@Pennmedicine.upenn.edu>"
+    "Guray Erus <guray.erus@pennmedicine.upenn.edu>",
 ]
-keywords = ["neuro-imaging", "MRI", "big data"]
+keywords = ["neuro-imaging", "MRI", "plotting"]
 
 readme = "README.md"
 
-include = ["NiPlot/plugins/data/MUSE_ROI_Dictionary.csv",
-           "NiPlot/**/*.ui",
+include = ["NiPlot/**/*.ui",
            "NiPlot/**/*.yapsy-plugin",
            "*.png"]
 packages = [
@@ -32,22 +29,18 @@ bundle = "com.example"
 version = "0.1"
 description = "NeuroImaging Data Plotting Tool"
 authors = [
-    "Ahmed Abdulkadir <Ahmed.Abdulkadir@pennmedicine.upenn.edu>",
-    "Ashish Singh <Ashish.Singh@pennmedicine.upenn.edu>",
-    "Randa Melhem <Randa.Melhem@Pennmedicine.upenn.edu>"
+    "Guray Erus <guray.erus@pennmedicine.upenn.edu>",
 ]
-keywords = ["neuro-imaging", "MRI", "big data"]
+keywords = ["neuro-imaging", "MRI", "plotting"]
 readme = "README.md"
 icon = "NiPlot/resources/icon"
 installer_icon = "NiPlot/resources/icon"
-include = ["NiPlot/plugins/data/MUSE_ROI_Dictionary.csv",
-           "NiPlot/**/*.ui",
+include = ["NiPlot/**/*.ui",
            "NiPlot/**/*.yapsy-plugin",
            "*.png"]
 packages = [
     {include = "NiPlot"}
 ]
-
 
 [tool.briefcase.app.NiPlot.macOS]
 requires = []
@@ -58,7 +51,6 @@ system_requires = []
 
 [tool.briefcase.app.NiPlot.windows]
 requires = []
-
 
 [tool.briefcase.app.NiPlot]
 formal_name = "NiPlot"
@@ -71,7 +63,6 @@ requires = ['cycler==0.10.0',
 'matplotlib>=3.4.2',
 'nibabel==3.2.1',
 'numpy>=1.21',
-'git+https://github.com/rpomponio/neuroHarmonize@refs/pull/26/head#egg=neuroHarmonize',
 'pandas==1.3.4',
 'Pillow>=9.0.0',
 'pyparsing==2.4.7',
@@ -102,7 +93,6 @@ MarkupSafe = "2.0.1"
 matplotlib = "^3.4.2"
 nibabel = "^3.2.1"
 numpy = "^1.21"
-neuroHarmonize = { git = "https://github.com/rpomponio/neuroHarmonize.git", branch = "refs/pull/26/head" }
 pandas = "1.3.4"
 Pillow = "^9.0.0"
 pyparsing = "^2.4.7"
@@ -124,10 +114,9 @@ pytest = "7.0.1"
 pytest-qt = "4.0.2"
 
 [tool.poetry.urls]
-homepage = "https://cbica.github.io/NiPlot"
+homepage = "https://github.com/gurayerus/NiPlot"
 repository = "https://github.com/gurayerus/NiPlot"
 documentation = "https://cbica.github.io/NiPlot"
-
 
 [tool.poetry.scripts]
 NiPlot = "NiPlot:main"
